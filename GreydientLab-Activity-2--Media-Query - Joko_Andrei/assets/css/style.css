@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.main-box { 
+    width: 100%;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #c4c4c4;
+}
+
+.grey-box {
+    max-width: 496px;
+    height: 389px;
+    flex: 1;
+    margin: 10px; 
+    background-color: #535353;
+}
+
+.blue-box {
+    height: 389px;
+    margin: 10px;
+    flex: 1;
+    max-width: 496px;
+    background-color: #0041a1;
+}
+
+@media screen and (max-width: 428px) {
+  
+.main-box {
+    background-color: transparent;
+    flex-wrap: wrap;
+}  
+
+.grey-box {
+    max-width: 353px;
+    max-height: 277px;
+    flex: 50%;
+    margin: 10px; 
+    background-color: #535353;
+}
+
+.blue-box {
+    max-width: 353px;
+    max-height: 277px;    
+    flex: 50%;
+    margin: 10px;
+    background-color: #0041a1;  
+}
+}
